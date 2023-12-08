@@ -19,8 +19,15 @@ import soot.options.Options;
 
 public class Main {
 
+    // Inside the Virtual Machine //
+    //static String APK_PATH      = "/home/micsispa/FlowDroidAnalysisTemplate/ToAnalyze/testApp.apk";
+    //static String APK_PATH      = "/home/micsispa/FlowDroidAnalysisTemplate/ToAnalyze/koopaApp.apk";
+
+    // Tests //
     //static String APK_PATH      = "/home/marco/Teaching/StaticAndDynamicSoftwareSecurityAnalysis/ProjectSDDSA/ToAnalyze/testApp.apk";
     static String APK_PATH      = "/home/marco/Teaching/StaticAndDynamicSoftwareSecurityAnalysis/ProjectSDDSA/ToAnalyze/koopaApp.apk";
+
+
     static String ANDROID_PATH  = "/home/marco/android/platforms";
     static String PKG_NAME      = "lu.snt.trux.koopaapp";
 
