@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM 
+          "https://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/xml/doc-files/log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    
+    <!-- Suppress logs from Soot -->
+    <logger name="soot" additivity="false">
+        <level value="OFF"/>
+    </logger>
+
+    <!-- Allow logs from your own package -->
+    <logger name="your.package.name" additivity="false">
+        <level value="DEBUG"/>
+        <appender-ref ref="STDOUT_DEBUG"/>
+        <!-- Add other appenders as needed -->
+    </logger>
+
+    <!-- Root logger configuration -->
+    <root>
+        <level value="INFO"/>
+        <appender-ref ref="STDOUT_INFO"/>
+        <!-- Add other appenders as needed -->
+    </root>
+</log4j:configuration>
